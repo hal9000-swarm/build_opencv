@@ -123,6 +123,8 @@ configure () {
         -D WITH_CUDNN=ON
         -D WITH_GSTREAMER=ON
         -D WITH_LIBV4L=ON
+	-D CPACK_BINARY_DEB=ON
+	-D WITH_TBB=ON
         -D WITH_OPENGL=ON"
 
     if [[ "$1" != "test" ]] ; then
@@ -172,13 +174,13 @@ main () {
     fi
 
     # avoid a sudo make install (and root owned files in ~) if $PREFIX is writable
-    if [[ -w ${PREFIX} ]] ; then
-        make install 2>&1 | tee -a install.log
-    else
-        sudo make install 2>&1 | tee -a install.log
-    fi
+    # if [[ -w ${PREFIX} ]] ; then
+    #    make install 2>&1 | tee -a install.log
+    # else
+    #     sudo make install 2>&1 | tee -a install.log
+    # fi
 
-    cleanup --test-warning
+    # cleanup --test-warning
 
 }
 
