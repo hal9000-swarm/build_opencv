@@ -10,18 +10,18 @@ Alternatively just build on a Xavier (takes about an hour).
 
 ## Usage:
 ```shell
-./build_opencv.sh
+./build_opencv_[tegra|gpu].sh
 ```
 
 ## Specifying an OpenCV version (git branch)
 ```shell
-./build_opencv.sh 4.4.0
+./build_opencv[tegra|gpu].sh 4.4.0
 ```
 
 Where `4.4.0` is any version of openCV from 2.2 to 4.4.0
 (any valid OpenCV git branch or tag will also attempt to work, however the very old versions have not been tested to build and may require spript modifications.).
 
-**JetPack 4.4 NOTE:** the minimum version that will build correctly on JetPack 4.4 GA is 4.4.0. Prior versions of JetPack may need the CUDNN version adjusted (the `-D CUDNN_VERSION='8.0'` line can simply be removed).
+**JetPack 4.4 / Jetson NOTE:** the minimum version that will build correctly on JetPack 4.4 GA is 4.4.0. Prior versions of JetPack may need the CUDNN version adjusted (the `-D CUDNN_VERSION='8.0'` line can simply be removed).
 
 **Package**
 It requires the following steps:
