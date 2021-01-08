@@ -13,6 +13,31 @@ Alternatively just build on a Xavier (takes about an hour).
 ./build_opencv_[tegra|gpu].sh
 ```
 
+## Notes:
+
+The scripts set the relevant compute capability targets to be included. For a list of Nvidia products see: https://developer.nvidia.com/cuda-gpus
+
+Summary:
+* PTX (Intermediate format) is disabled.
+* CUDNN Version is set to 8
+* Supported platforms are marked by *
+
+# Desktop GPUs
+- Fermi   2.0
+- Kepler  3.0;3.5;3.7
+- Maxwell 5.0;5.2
+- Pascal  6.0;6.1 *
+- Volta 7.0 *
+- Turing 7.5 *
+- Ampere  8.0;8.6 *
+
+# Jetson 
+- Jetson AGX Xavier	7.2 *
+- Jetson Nano	5.3 *
+- Jetson TX2	6.2 *
+- Jetson TX1	5.3 *
+- Tegra X1	5.3 *
+
 ## Specifying an OpenCV version (git branch)
 ```shell
 ./build_opencv[tegra|gpu].sh 4.4.0
