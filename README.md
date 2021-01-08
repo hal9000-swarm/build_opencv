@@ -1,6 +1,6 @@
 # OpenCV build script for Tegra
 
-This script builds OpenCV from source on Tegra (Nano, NX, AGX, etc.).
+This script builds OpenCV from source on Tegra (Nano, NX, AGX, etc.) or for Nvidia desktop GPUs.
 
 Related thread on Nvidia developer forum 
 [here](https://devtalk.nvidia.com/default/topic/1051133/jetson-nano/opencv-build-script/).
