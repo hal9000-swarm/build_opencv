@@ -1,4 +1,4 @@
-# OpenCV build script for Tegra
+# OpenCV build script
 
 This script builds OpenCV from source on Tegra (Nano, NX, AGX, etc.) or for Nvidia desktop GPUs.
 
