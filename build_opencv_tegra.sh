@@ -45,8 +45,8 @@ setup () {
 
 git_source () {
     echo "Getting version '$1' of OpenCV"
-    git clone --depth 1 --branch "$1" https://github.com/opencv/opencv.git
-    git clone --depth 1 --branch "$1" https://github.com/opencv/opencv_contrib.git
+    git clone --depth 1 --branch gstreamerTimeoutpatch https://github.com/hal9000-swarm/opencv.git
+    git clone --depth 1 --branch 4.4.0 https://github.com/hal9000-swarm/opencv_contrib.git
 }
 
 install_dependencies () {
